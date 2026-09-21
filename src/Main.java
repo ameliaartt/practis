@@ -1,5 +1,12 @@
 import java.util.Scanner;
 public class Main {
+    public static long factorial(int n){
+        long result = 1;
+        for (int i = 2; i <= n; i++){
+            result *= i;
+        }
+        return result;
+    }
     public static void main(String[] args) {
         /*3. Написать программу, в результате которой массив чисел создается с
         помощью инициализации (как в Си) вводится и считается в цикле сумма
@@ -63,5 +70,8 @@ public class Main {
         /*7. Написать программу, которая с помощью метода класса, вычисляет
         факториал числа (использовать управляющую конструкцию цикла), проверить
         работу метода. */
+        System.out.print("Введите число, факториал которого хотите вычислить:");
+        int num1 = scanner.nextInt();
+        System.out.println("Ответ: " + factorial(num1));
     }
 }
