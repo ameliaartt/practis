@@ -1,23 +1,11 @@
 import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
-        int x = 1;
-        int y = 23;
-        /*String ss = "Hello";
-        String s1 = new String("Mirea");
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("x =");
-        x = scanner.nextInt();
-        System.out.print("y =");
-        y = scanner.nextInt();
-        System.out.println(x + y);
-        System.out.println(s1 + ss + '\'' + '\n' + '\"' + '\t')
-        System.out.println("Hello, World!" + "jifh" + x + y); */
-
         /*3. Написать программу, в результате которой массив чисел создается с
         помощью инициализации (как в Си) вводится и считается в цикле сумма
         элементов целочисленного массива, а также среднее арифметическое его
         элементов результат выводится на экран. Использовать цикл for. */
+        System.out.println("Задание 3");
         int[] array1 = {1, 34, 67, 58, 34, 66, 90, 8, 9, 29};
         int res = 0;
         for(int i = 0; i < 10; i++) {
@@ -31,21 +19,42 @@ public class Main {
         /*4. Написать программу, в результате которой массив чисел вводится
         пользователем с клавиатуры считается сумма элементов целочисленного
         массива с помощью циклов do while, while, также необходимо найти
-        максимальный и минимальный элемент в массиве, результат выводится на экран.
-        5. Написать программу, в результате которой выводятся на экран
-        аргументы командной строки в цикле for.  */
+        максимальный и минимальный элемент в массиве, результат выводится на экран.*/
+        System.out.println("Задание 4");
         Scanner scanner = new Scanner(System.in);
-        System.out.print("n =");
+        System.out.print("n (array size) = ");
         int n = scanner.nextInt();
         int[] array2 = new int[n];
-        int res2 = 0;
-        for(int i = 0; i < 10; i++) {
-            res += array1[i];
+        System.out.print("Enter the array elements: ");
+        array2[0] = scanner.nextInt();
+        int res2 = array2[0];
+        int max_num = 0;
+        int min_num = array2[0];
+        int i = 1;
+        while(i < n) {
+            array2[i] = scanner.nextInt();
+            if (max_num < array2[i]) {
+                max_num = array2[i];
+            }
+            if (min_num > array2[i]) {
+                min_num = array2[i];
+            }
+            res2 += array2[i];
+            i += 1;
         }
-        System.out.println("summ = " + res);
-        System.out.println("arith. mean = " + (res / 10));
-        for(int i = 0; i < 10; i++) {
-            System.out.print(array1[i] + " ");
-        }
+        System.out.println("summ = " + res2);
+        System.out.println("max = " + max_num);
+        System.out.println("min = " + min_num);
+
+        /*5. Написать программу, в результате которой выводятся на экран
+        аргументы командной строки в цикле for.  */
+
+
+        /*6. Написать программу, в результате работы которой выводятся на экран
+        первые 10 чисел гармонического ряда (форматировать вывод).*/
+
+        /*6. Написать программу, которая с помощью метода класса, вычисляет
+        факториал числа (использовать управляющую конструкцию цикла), проверить
+        работу метода. */
     }
 }
