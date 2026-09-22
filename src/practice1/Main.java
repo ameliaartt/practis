@@ -1,3 +1,5 @@
+package practice1;
+
 import java.util.Scanner;
 public class Main {
     public static long factorial(int n){
