@@ -6,7 +6,7 @@ public class Test {
     private static int failed = 0;
 
     public static void main(String[] args) {
-        System.out.println("=== Тестирование класса Person ===\n");
+        System.out.println("Тестирование класса Person ===\n");
 
         check("Петров И.С.",
                 new Person("Иван", "Петров", "Сергеевич").getFullName());
