@@ -1,7 +1,6 @@
 package practice17.z1;
 
 import java.io.*;
-import java.util.Scanner;
 
 public class StudentList {
     private Student head;

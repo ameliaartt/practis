@@ -15,8 +15,7 @@ public class Exception6 {
 
     при корректном ключе выводится data for correctKey.
     При null исключение, выброшенное в getDetails, не обрабатывается там, а пробрасывается в printMessage,
-    затем в main — и программа падает с трассировкой стека, в которой видно всю цепочку вызовов
-    (getDetails → printMessage → main).
+    затем в main и программа падает с трассировкой стека, в которой видно всю цепочку вызовов.
      */
     public void printMessage(String key) {
         try {
